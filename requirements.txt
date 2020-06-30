@@ -9,7 +9,7 @@ Click==7.0
 colorama==0.4.3
 cookiecutter==1.7.0
 databases==0.2.6
-Django==2.2.5
+Django==2.2.13
 django-polls==0.1
 django-tables2==2.1.1
 dnspython==1.16.0
