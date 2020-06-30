@@ -1,9 +1,12 @@
 from flask import Flask, request
 from flask_pymongo import PyMongo
 import json
+from configlocal import database_conn_string
+
 
 app=Flask(__name__)
-app.config['MONGO_URI']="mongodb+srv://sliwmsmaster:YIb40Rl0axhmKDug@cluster0-u8jcj.mongodb.net/sliwms_db?retryWrites=true&w=majority"
+app.config['MONGO_URI']=database_conn_string()
+
 mongo=PyMongo(app)
 
 @app.route('/', methods=['GET'])
